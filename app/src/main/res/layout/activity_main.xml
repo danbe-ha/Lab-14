@@ -1,0 +1,103 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Configuration Profil"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/input_alias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alias utilisateur"
+            android:background="@android:drawable/edit_text"/>
+
+        <Spinner
+            android:id="@+id/drop_lang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/toggle_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Activer Mode Sombre" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginVertical="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sécurité (Chiffré)"
+            android:textStyle="bold"
+            android:paddingBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/input_secret_token"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Clé API secrète"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btn_save_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sauvegarder Tout"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btn_load_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Charger Données" />
+
+        <Button
+            android:id="@+id/btn_export_json"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Générer JSON Interne"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btn_reset_vault"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Réinitialiser Lab"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/label_display_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:background="#E0E0E0"
+            android:hint="Les résultats s'afficheront ici..."
+            android:textColor="#333333" />
+
+    </LinearLayout>
+</ScrollView>
